@@ -59,6 +59,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             let defaultAction = UIAlertAction(title: "OK", style: .destructive){
                 (action) in list.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+                self.setData()
             }
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(defaultAction)
@@ -93,7 +94,6 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             tableView.setEditing(true,
                                  animated: true)
         }
-        
     }//에디팅 모드 활성화되어 있으면 비활성화로 비활성화로 되어있으면 활성화
 
 
