@@ -16,7 +16,6 @@ class TextViewController: UIViewController {
         do { let item: toDoList = toDoList(title : textTitle.text!, content : enterText.text!)
             list.append(item)
             self.navigationController?.popViewController(animated: true);}}
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
