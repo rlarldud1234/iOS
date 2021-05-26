@@ -41,7 +41,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             return
         }
             print(data.description)
-     
+      
             // list 배열에 저장하기
             print(type(of: data))
             list = data.map {

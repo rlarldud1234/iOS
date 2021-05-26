@@ -24,8 +24,17 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var idealType : UITextField!
     
     func setData(){
+        let Data = user.map{
+            [
+                "id" : $0.id,
+                "ps" : $0.ps,
+                "name" : $0.name,
+                "key" : $0.key,
+                "idealType" : $0.idealType
+            ]
+        }
         let userDefaults = UserDefaults.standard
-        userDefaults.set(user, forKey: "item")
+        userDefaults.set(Data, forKey: "item")
         userDefaults.synchronize()
     }
     

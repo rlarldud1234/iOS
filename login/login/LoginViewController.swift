@@ -24,15 +24,20 @@ class LoginViewController: UIViewController {
     
     func loadData() {
         let userDefaults = UserDefaults.standard
-        guard let data = userDefaults.object(forKey: "item") as? [loginItem] else {
+        guard let data = userDefaults.object(forKey: "item") as? [[String: AnyObject]] else {
             return
         }
-        print(data)
+        user = data.map{
+            let id = $0["id"] as? String
+            let ps = $0["ps"] as? String
+            
+            return loginItem(id : id!, ps : ps!)
+        }
     }
     
     func login()
     {
-        for i in 0...user.count {
+        for i in 0..<user.count {
             if user[i].id == idTextField.text && user[i].ps == psTextField.text{
                 textlabel.isHidden = false
             }
