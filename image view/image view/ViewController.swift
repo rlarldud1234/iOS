@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             newHeight = img.frame.height/scale
             btn.setTitle("확대", for: .normal)
         }
-        else{Gi
+        else{
             newWidth = img.frame.width*scale
             newHeight = img.frame.height*scale
             btn.setTitle("축소", for: .normal)
