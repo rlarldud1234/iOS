@@ -34,7 +34,7 @@ class SignupViewController: UIViewController {
             ]
         }
         let userDefaults = UserDefaults.standard
-        userDefaults.set(Data, forKey: "item")
+        userDefaults.set(Data , forKey: "item")
         userDefaults.synchronize()
     }
     
