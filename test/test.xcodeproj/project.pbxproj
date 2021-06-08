@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38576261266F5672009B34A2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38576260266F5672009B34A2 /* API.swift */; };
+		38576265266F56C4009B34A2 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38576264266F56C4009B34A2 /* AuthAPI.swift */; };
+		38576267266F5A7A009B34A2 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38576266266F5A7A009B34A2 /* header.swift */; };
+		38576269266F5D02009B34A2 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38576268266F5D02009B34A2 /* SignInModel.swift */; };
 		38891C27266794BC0037F045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38891C26266794BC0037F045 /* AppDelegate.swift */; };
 		38891C29266794BC0037F045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38891C28266794BC0037F045 /* SceneDelegate.swift */; };
 		38891C2B266794BC0037F045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38891C2A266794BC0037F045 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		0B849641E7B581F6E4F7041A /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		38576260266F5672009B34A2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		38576264266F56C4009B34A2 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		38576266266F5A7A009B34A2 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
+		38576268266F5D02009B34A2 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		38891C23266794BC0037F045 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38891C26266794BC0037F045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38891C28266794BC0037F045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 				38891C34266794BC0037F045 /* Info.plist */,
 				38E2D5E4266798BC0097945B /* SignupViewController.swift */,
 				38E2D5E626679C240097945B /* HttpClient.swift */,
+				38576260266F5672009B34A2 /* API.swift */,
+				38576264266F56C4009B34A2 /* AuthAPI.swift */,
+				38576266266F5A7A009B34A2 /* header.swift */,
+				38576268266F5D02009B34A2 /* SignInModel.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -211,10 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38576267266F5A7A009B34A2 /* header.swift in Sources */,
 				38E2D5E726679C240097945B /* HttpClient.swift in Sources */,
+				38576265266F56C4009B34A2 /* AuthAPI.swift in Sources */,
 				38891C2B266794BC0037F045 /* ViewController.swift in Sources */,
 				38891C27266794BC0037F045 /* AppDelegate.swift in Sources */,
+				38576269266F5D02009B34A2 /* SignInModel.swift in Sources */,
 				38E2D5E5266798BC0097945B /* SignupViewController.swift in Sources */,
+				38576261266F5672009B34A2 /* API.swift in Sources */,
 				38891C29266794BC0037F045 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
