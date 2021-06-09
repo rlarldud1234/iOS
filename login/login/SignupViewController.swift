@@ -38,8 +38,7 @@ class SignupViewController: UIViewController {
         userDefaults.synchronize()
     }
     
-    @IBAction func enter(_ sender : UIButton)
-    {
+    @IBAction func enter(_ sender : UIButton){
         
         user.append(loginItem(id: id.text!, ps: ps.text!, name: name.text!, key: key.text!, idealType: idealType.text!))
         setData()
