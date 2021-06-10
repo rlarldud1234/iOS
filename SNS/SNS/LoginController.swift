@@ -15,6 +15,12 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        id.text = ""
+        ps.text = ""
     }
 
     func loadData() {

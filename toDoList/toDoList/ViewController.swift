@@ -24,6 +24,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     }//셀에다가 주제와 내용 넣어주고 반환해주기
     func setData(){
         let Data = list.map {
+            
             [
                 "title" : $0.title,
                 "content" : $0.content
@@ -47,7 +48,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             list = data.map {
                 let title = $0["title"] as? String
                 let content = $0["content"] as? String
-                
+    
                 return toDoList(title: title!, content: content!)
             }
         }

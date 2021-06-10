@@ -55,14 +55,6 @@
                                     <segue destination="5bH-A3-994" kind="show" id="pTp-V6-Si7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY7-Yt-ArK">
-                                <rect key="frame" x="137" y="601" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LogIn"/>
-                                <connections>
-                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1o-1f-64O"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LogIn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEl-n9-rWe">
                                 <rect key="frame" x="150" y="192" width="115" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,6 +74,14 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPg-No-fAf">
+                                <rect key="frame" x="109" y="601" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kd6-Gk-ZTx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.97005246460000005" blue="0.5805188765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -238,16 +238,25 @@
                         <color key="backgroundColor" red="1" green="0.97005246460000005" blue="0.5805188765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="labelColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NAf-ia-QOT"/>
+                    <navigationItem key="navigationItem" id="sbi-6m-DPV">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="Pl7-yF-wXC">
+                            <connections>
+                                <segue destination="kIi-Zc-dS9" kind="show" id="aG6-Jh-g8i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="on7-Rs-0CE" id="BaW-eG-WY5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yql-9k-wiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824.6376811594205" y="-145.3125"/>
+            <point key="canvasLocation" x="1824.6153846153845" y="-145.73459715639811"/>
         </scene>
         <!--Add Data View Controller-->
         <scene sceneID="2tw-xo-5d6">
             <objects>
-                <viewController id="kIi-Zc-dS9" customClass="AddDataViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kIi-Zc-dS9" customClass="AddDataViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8BS-14-hFZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,6 +316,13 @@
                         <viewLayoutGuide key="safeArea" id="Xfx-fR-wLo"/>
                         <color key="backgroundColor" red="1" green="0.97005246460000005" blue="0.5805188765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ADK-4x-x0l">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="4mE-US-QR7">
+                            <connections>
+                                <action selector="doneBtn:" destination="kIi-Zc-dS9" id="tlc-4e-Lz3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addTitle" destination="0b5-dw-rfY" id="ODy-Iu-NgA"/>
                         <outlet property="detail" destination="vNY-fo-ZrJ" id="P2e-9W-Bie"/>

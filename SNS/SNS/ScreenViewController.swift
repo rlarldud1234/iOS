@@ -10,21 +10,65 @@ import UIKit
 
 class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return data.count
     }
+    @IBOutlet weak var tableView : UITableView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = data[indexPath.row].title
+        cell.detailTextLabel?.text = data[indexPath.row].deatail
         
+        return cell
     }
     
+    func setCellData() {
+        let cell = data.map {
+            [
+                "title" : $0.title,
+                "detail" : $0.deatail
+            ]
+        }
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(cell, forKey: "cellItem")
+        userDefaults.synchronize()
+    }
+    
+    func loadData() {
+        let userDefaults = UserDefaults.standard
+        guard let cellData = userDefaults.object(forKey: "cellItem") as? [[String : AnyObject]] else {
+            return
+        }
+        
+        data = cellData.map {
+            let title = $0["title"] as? String
+            let detail = $0["detail"] as? String
+            
+            return DataList(title: title!, deatail: detail!)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        loadData()
+        
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        setCellData()
+        tableView.reloadData()
+    }
+    
+    @IBAction func logoutBtn(_ sender: UIButton)
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
