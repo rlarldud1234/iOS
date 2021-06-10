@@ -8,6 +8,7 @@
 import UIKit
 
 
+
 class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
@@ -20,6 +21,16 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.detailTextLabel?.text = data[indexPath.row].deatail
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            data.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            self.setCellData()
+            
+        }
     }
     
     func setCellData() {
@@ -63,20 +74,24 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.reloadData()
     }
     
-    @IBAction func logoutBtn(_ sender: UIButton)
-    {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func tableView(_ sender : UIBarButtonItem){
+        if tableView.isEditing{
+            tableView.setEditing(false, animated: true)
+        }
+        else {
+            tableView.setEditing(true,
+                                 animated: true)
+        }
+        
     }
-    
-    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

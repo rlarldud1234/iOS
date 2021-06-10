@@ -8,9 +8,11 @@
 import UIKit
 
 class LoginController: UIViewController {
-
+    
     @IBOutlet weak var id : UITextField!
     @IBOutlet weak var ps : UITextField!
+    
+    var okay : String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,7 @@ class LoginController: UIViewController {
         id.text = ""
         ps.text = ""
     }
-
+    
     func loadData() {
         let userDefaults = UserDefaults.standard
         guard let data = userDefaults.object(forKey: "item") as? [[String: AnyObject]]
@@ -34,20 +36,25 @@ class LoginController: UIViewController {
             return LoginItem(id : id!, ps: ps!)
         }
     }
-
+    
     func login() {
         for i in 0..<user.count{
             if user[i].id == id.text && user[i].ps == ps.text{
-                let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "Screen")
-                
-            self.navigationController?.pushViewController(pushVC!, animated: true)
+                okay = "okay"
             }
         }
+        if okay == "okay" {
+            guard let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "Screen") else { return }
+            self.navigationController?.pushViewController(pushVC, animated: true)
+        }
+        
     }
-    
     @IBAction func loginBtn(_ sender : UIButton)
     {
         login()
     }
 }
- 
+
+
+
+

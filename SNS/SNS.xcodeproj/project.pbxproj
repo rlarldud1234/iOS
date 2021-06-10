@@ -16,6 +16,7 @@
 		3833A24F2670CAC70002B011 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833A24E2670CAC70002B011 /* SignupViewController.swift */; };
 		3833A2512670CB030002B011 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833A2502670CB030002B011 /* ScreenViewController.swift */; };
 		3833A2532670D6A30002B011 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833A2522670D6A30002B011 /* AddDataViewController.swift */; };
+		38D68EFB26721D8700ADF6F0 /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D68EFA26721D8700ADF6F0 /* ExpansionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3833A24E2670CAC70002B011 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3833A2502670CB030002B011 /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
 		3833A2522670D6A30002B011 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
+		38D68EFA26721D8700ADF6F0 /* ExpansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				3833A23E2670C5EE0002B011 /* LoginController.swift */,
 				3833A24E2670CAC70002B011 /* SignupViewController.swift */,
 				3833A2502670CB030002B011 /* ScreenViewController.swift */,
+				38D68EFA26721D8700ADF6F0 /* ExpansionViewController.swift */,
 				3833A2402670C5EE0002B011 /* Main.storyboard */,
 				3833A2522670D6A30002B011 /* AddDataViewController.swift */,
 				3833A2432670C5EF0002B011 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D68EFB26721D8700ADF6F0 /* ExpansionViewController.swift in Sources */,
 				3833A23F2670C5EE0002B011 /* LoginController.swift in Sources */,
 				3833A23B2670C5EE0002B011 /* AppDelegate.swift in Sources */,
 				3833A2512670CB030002B011 /* ScreenViewController.swift in Sources */,

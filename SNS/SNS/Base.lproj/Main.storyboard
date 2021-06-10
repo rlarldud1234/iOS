@@ -208,6 +208,56 @@
             </objects>
             <point key="canvasLocation" x="1824.6376811594205" y="517.63392857142856"/>
         </scene>
+        <!--Expansion View Controller-->
+        <scene sceneID="hAQ-9z-3TJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="C2h-vu-6KR" customClass="ExpansionViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gu-PX-Bo5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNc-NI-boT">
+                                <rect key="frame" x="48" y="100" width="294" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99456197020000003" green="0.9988632798" blue="0.84311264750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9E-Lx-MLh">
+                                <rect key="frame" x="16" y="180" width="358" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99456197020000003" green="0.9988632798" blue="0.84311264750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-d4-0sz">
+                                <rect key="frame" x="0.0" y="692" width="390" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-vJ-cWh">
+                                        <rect key="frame" x="77" y="27" width="237" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ike-mw-52I"/>
+                        <color key="backgroundColor" red="0.99628275629999996" green="0.97512322659999995" blue="0.51754039529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aBi-Ee-Gut"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="K9E-Lx-MLh" id="CTe-dG-2ek"/>
+                        <outlet property="titleLabel" destination="lNc-NI-boT" id="bJe-jc-7oL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQp-h9-2mC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636.9230769230767" y="531.75355450236964"/>
+        </scene>
         <!--Screen View Controller-->
         <scene sceneID="jna-0D-lPN">
             <objects>
@@ -222,14 +272,33 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.99599689250000001" green="0.99943488840000005" blue="0.45083498950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iNh-5q-KEd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Xo8-v4-AMB" detailTextLabel="ofO-FT-lyA" style="IBUITableViewCellStyleSubtitle" id="iNh-5q-KEd">
                                         <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iNh-5q-KEd" id="voM-b6-D7r">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xo8-v4-AMB">
+                                                    <rect key="frame" x="20" y="7.0000000000000009" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ofO-FT-lyA">
+                                                    <rect key="frame" x="19.999999999999996" y="23.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99456197020000003" green="0.9988632798" blue="0.84311264750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="C2h-vu-6KR" kind="show" id="Oox-OF-WkO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -239,11 +308,19 @@
                         <color key="tintColor" systemColor="labelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="sbi-6m-DPV">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="Pl7-yF-wXC">
-                            <connections>
-                                <segue destination="kIi-Zc-dS9" kind="show" id="aG6-Jh-g8i"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="6gw-Kr-HR2"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Add" id="Pl7-yF-wXC">
+                                <connections>
+                                    <segue destination="kIi-Zc-dS9" kind="show" id="aG6-Jh-g8i"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Edit" id="5Sg-Px-6NW">
+                                <connections>
+                                    <action selector="tableView:" destination="SP5-MF-oZB" id="FUd-b3-e0z"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="on7-Rs-0CE" id="BaW-eG-WY5"/>
