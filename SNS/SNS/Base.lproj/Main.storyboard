@@ -211,7 +211,7 @@
         <!--Expansion View Controller-->
         <scene sceneID="hAQ-9z-3TJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="C2h-vu-6KR" customClass="ExpansionViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="a" modalPresentationStyle="fullScreen" id="C2h-vu-6KR" customClass="ExpansionViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3gu-PX-Bo5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +297,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99456197020000003" green="0.9988632798" blue="0.84311264750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
-                                            <segue destination="C2h-vu-6KR" kind="show" id="Oox-OF-WkO"/>
+                                            <segue destination="C2h-vu-6KR" kind="show" identifier="a" id="Oox-OF-WkO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

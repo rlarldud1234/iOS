@@ -69,6 +69,7 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         setCellData()
         tableView.reloadData()
@@ -84,6 +85,8 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
     }
+  
+
     /*
      // MARK: - Navigation
      
@@ -94,4 +97,5 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
      }
      */
     
+
 }
