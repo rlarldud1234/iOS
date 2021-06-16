@@ -28,6 +28,12 @@
                                 <rect key="frame" x="20" y="344" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bqj-CJ-GT4">
+                                <rect key="frame" x="34" y="231" width="347" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,6 +45,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txMessage" destination="Bqj-CJ-GT4" id="lU3-i6-GJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +93,7 @@
                     <navigationItem key="navigationItem" title="수정화면" id="ta3-eo-rIe"/>
                     <connections>
                         <outlet property="lblWay" destination="ZqA-gL-cLU" id="PQl-6i-Pc4"/>
+                        <outlet property="txMessage" destination="2pm-SC-lVQ" id="HMJ-H1-3m4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iig-1F-KiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

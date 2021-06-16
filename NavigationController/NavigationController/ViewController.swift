@@ -7,8 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, EditDelegate {
+    func didMessageEditDone(_ controller: EditViewController, message: String) {
+        txMessage.text = message
+    }
+    
 
+    @IBOutlet var txMessage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,6 +28,8 @@ class ViewController: UIViewController {
         else if segue.identifier == "editBarButton" {
             editViewController.textWayValue = "segue : user Bar button"
         }
+        editViewController.textMessage = txMessage.text!
+        editViewController.delegate = self
     }
 
 }
