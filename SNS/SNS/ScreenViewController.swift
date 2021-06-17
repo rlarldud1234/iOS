@@ -87,6 +87,19 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
   
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath : IndexPath){
+        self.performSegue(withIdentifier: "segue1", sender: self)
+
+      func prepare(for segue: UIStoryboardSegue, sender : Any?)
+        {
+            if segue.identifier == "segu1",
+               let nextScene = segue.destination as? ScreenViewController,
+               let indexPath = self.tableView.indexPathsForSelectedRows {
+                
+
+            }
+               
+        }
     /*
      // MARK: - Navigation
      
