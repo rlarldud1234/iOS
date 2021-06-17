@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3849D0EA267C103500D2C742 /* 우리 영웅이.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3849D0E8267C103500D2C742 /* 우리 영웅이.jpeg */; };
+		3849D0EB267C103500D2C742 /* 우리 영웅이2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3849D0E9267C103500D2C742 /* 우리 영웅이2.jpeg */; };
 		38B578F72679662B0049D546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B578F62679662B0049D546 /* AppDelegate.swift */; };
 		38B578F92679662B0049D546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B578F82679662B0049D546 /* SceneDelegate.swift */; };
 		38B578FB2679662B0049D546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B578FA2679662B0049D546 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3849D0E8267C103500D2C742 /* 우리 영웅이.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "우리 영웅이.jpeg"; sourceTree = "<group>"; };
+		3849D0E9267C103500D2C742 /* 우리 영웅이2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "우리 영웅이2.jpeg"; sourceTree = "<group>"; };
 		38B578F32679662B0049D546 /* NavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B578F62679662B0049D546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38B578F82679662B0049D546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				38B579012679662C0049D546 /* LaunchScreen.storyboard */,
 				38B579042679662C0049D546 /* Info.plist */,
 				38B5790A267967450049D546 /* EditViewController.swift */,
+				3849D0E8267C103500D2C742 /* 우리 영웅이.jpeg */,
+				3849D0E9267C103500D2C742 /* 우리 영웅이2.jpeg */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -127,8 +133,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3849D0EA267C103500D2C742 /* 우리 영웅이.jpeg in Resources */,
 				38B579032679662C0049D546 /* LaunchScreen.storyboard in Resources */,
 				38B579002679662C0049D546 /* Assets.xcassets in Resources */,
+				3849D0EB267C103500D2C742 /* 우리 영웅이2.jpeg in Resources */,
 				38B578FE2679662B0049D546 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

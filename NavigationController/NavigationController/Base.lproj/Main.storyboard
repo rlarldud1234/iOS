@@ -46,6 +46,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imgView" destination="omf-2j-wuH" id="MiR-Wh-5YT"/>
                         <outlet property="txMessage" destination="Bqj-CJ-GT4" id="lU3-i6-GJF"/>
                     </connections>
                 </viewController>
@@ -71,6 +72,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wub-ZO-HYn">
                                 <rect key="frame" x="334" y="171" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="swImageOnOff:" destination="HPB-7d-wfD" eventType="touchUpInside" id="HwX-iy-Q4h"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5a-5B-YSI">
                                 <rect key="frame" x="356" y="103" width="30" height="30"/>
@@ -93,6 +97,7 @@
                     <navigationItem key="navigationItem" title="수정화면" id="ta3-eo-rIe"/>
                     <connections>
                         <outlet property="lblWay" destination="ZqA-gL-cLU" id="PQl-6i-Pc4"/>
+                        <outlet property="swisOn" destination="wub-ZO-HYn" id="ex1-gJ-be1"/>
                         <outlet property="txMessage" destination="2pm-SC-lVQ" id="HMJ-H1-3m4"/>
                     </connections>
                 </viewController>
