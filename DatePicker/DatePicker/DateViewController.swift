@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    let timeSelector: Selector = #selector(ViewController.updateTime)
+class DateViewController: UIViewController {
+    let timeSelector: Selector = #selector(DateViewController.updateTime)
     let interval = 1.0
     var count = 0
     
