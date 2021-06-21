@@ -12,6 +12,12 @@
 		38066D512680039600DC8772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38066D4F2680039600DC8772 /* Main.storyboard */; };
 		38066D532680039600DC8772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38066D522680039600DC8772 /* Assets.xcassets */; };
 		38066D562680039600DC8772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38066D542680039600DC8772 /* LaunchScreen.storyboard */; };
+		38E15B31268152940004B024 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E15B30268152940004B024 /* TableViewController.swift */; };
+		38E15B33268152D70004B024 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E15B32268152D70004B024 /* AddViewController.swift */; };
+		38E15B35268152EA0004B024 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E15B34268152EA0004B024 /* DetailViewController.swift */; };
+		38E15B39268153EB0004B024 /* 우리 영웅이2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 38E15B36268153EA0004B024 /* 우리 영웅이2.jpeg */; };
+		38E15B3A268153EB0004B024 /* 우리 영웅이.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 38E15B37268153EA0004B024 /* 우리 영웅이.jpeg */; };
+		38E15B3B268153EB0004B024 /* hq720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38E15B38268153EB0004B024 /* hq720.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		38066D522680039600DC8772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38066D552680039600DC8772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38066D572680039600DC8772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E15B30268152940004B024 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		38E15B32268152D70004B024 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		38E15B34268152EA0004B024 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		38E15B36268153EA0004B024 /* 우리 영웅이2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "우리 영웅이2.jpeg"; sourceTree = "<group>"; };
+		38E15B37268153EA0004B024 /* 우리 영웅이.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "우리 영웅이.jpeg"; sourceTree = "<group>"; };
+		38E15B38268153EB0004B024 /* hq720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hq720.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				38066D522680039600DC8772 /* Assets.xcassets */,
 				38066D542680039600DC8772 /* LaunchScreen.storyboard */,
 				38066D572680039600DC8772 /* Info.plist */,
+				38E15B30268152940004B024 /* TableViewController.swift */,
+				38E15B32268152D70004B024 /* AddViewController.swift */,
+				38E15B34268152EA0004B024 /* DetailViewController.swift */,
+				38E15B37268153EA0004B024 /* 우리 영웅이.jpeg */,
+				38E15B36268153EA0004B024 /* 우리 영웅이2.jpeg */,
+				38E15B38268153EB0004B024 /* hq720.jpg */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -122,8 +140,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				38066D562680039600DC8772 /* LaunchScreen.storyboard in Resources */,
+				38E15B3A268153EB0004B024 /* 우리 영웅이.jpeg in Resources */,
 				38066D532680039600DC8772 /* Assets.xcassets in Resources */,
 				38066D512680039600DC8772 /* Main.storyboard in Resources */,
+				38E15B3B268153EB0004B024 /* hq720.jpg in Resources */,
+				38E15B39268153EB0004B024 /* 우리 영웅이2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38066D4A2680039600DC8772 /* AppDelegate.swift in Sources */,
+				38E15B31268152940004B024 /* TableViewController.swift in Sources */,
+				38E15B35268152EA0004B024 /* DetailViewController.swift in Sources */,
+				38E15B33268152D70004B024 /* AddViewController.swift in Sources */,
 				38066D4C2680039600DC8772 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
