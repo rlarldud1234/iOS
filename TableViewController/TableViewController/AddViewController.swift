@@ -18,6 +18,10 @@ class AddViewController: UIViewController {
     
 
     @IBAction func btnAddItem(_ sender: Any) {
+        items.append(tfAddItem.text!)
+        itemsImageFile.append("우리 영웅이.jpeg")
+        tfAddItem.text = ""
+        self.navigationController?.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation

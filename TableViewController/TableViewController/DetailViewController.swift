@@ -9,15 +9,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var receiveItem = ""
+    
     @IBOutlet var lblitem: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblitem.text = receiveItem
     }
     
-
+    func reciveItem(_ item : String)
+    {
+        receiveItem = item
+    }
     /*
     // MARK: - Navigation
 
