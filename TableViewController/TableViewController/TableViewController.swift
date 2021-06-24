@@ -89,6 +89,14 @@ class TableViewController: UITableViewController {
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sgDetail" {
+        let cell = sender as! UITableViewCell
+        let indexPath = self.tvListView.indexPath(for: cell)
+        let detailView = segue.destination as! DetailViewController
+        detailView.receiveItem(items[((indexPath! as NSIndexPath).row)])
+    }
+    }
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {

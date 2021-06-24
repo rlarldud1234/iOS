@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var receiveItem = ""
+    var receiveItem : String = ""
     
     @IBOutlet var lblitem: UILabel!
     
