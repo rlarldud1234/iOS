@@ -9,12 +9,18 @@ import UIKit
 
 class ExpansionViewController: UIViewController {
 
+    var titleItem : String = ""
+    var detailItem : String = ""
+    
     @IBOutlet weak var titleLabel : UILabel!
     @IBOutlet weak var detailLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        titleLabel.text! = titleItem
+        detailLabel.text! = detailItem
     }
 
 

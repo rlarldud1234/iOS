@@ -33,6 +33,10 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "삭제"
+    }
+    
     func setCellData() {
         let cell = data.map {
             [
@@ -111,4 +115,5 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
      */
     
 
+}
 }
