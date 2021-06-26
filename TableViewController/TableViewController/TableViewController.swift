@@ -42,7 +42,7 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
         
         // Configure the cell...
         cell.textLabel?.text = items[(indexPath as NSIndexPath).row]
@@ -97,7 +97,11 @@ class TableViewController: UITableViewController {
         detailView.receiveItem(items[((indexPath! as NSIndexPath).row)])
     }
     }
-    /*
+    override func prepare(for segue : UIStoryboardSegue, sender : Any?){
+        guard let indexPath = tableView.indexPath(for: sender as ?! uitableView)
+    }
+    /*{
+     
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.

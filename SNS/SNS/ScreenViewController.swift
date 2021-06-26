@@ -96,7 +96,7 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
       func prepare(for segue: UIStoryboardSegue, sender : Any?)
         {
-            if segue.identifier == "segu1",
+            if segue.identifier == "segue1",
                let nextScene = segue.destination as? ScreenViewController,
                let indexPath = self.tableView.indexPathsForSelectedRows {
                 
