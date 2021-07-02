@@ -89,21 +89,20 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
     }
-  
-
+    @IBAction func backBtn(_sender : UIBarButtonItem){
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath : IndexPath){
-        self.performSegue(withIdentifier: "segue1", sender: self)
-
-      func prepare(for segue: UIStoryboardSegue, sender : Any?)
-        {
-            if segue.identifier == "segue1",
-               let nextScene = segue.destination as? ScreenViewController,
-               let indexPath = self.tableView.indexPathsForSelectedRows {
-                
-
-            }
-               
+        guard let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "a") as? ExpansionViewController else {
+            return
         }
+        detailVC.titleItem = data[indexPath.row].title
+        detailVC.detailItem = data[indexPath.row].deatail
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    
     /*
      // MARK: - Navigation
      
@@ -114,6 +113,6 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
      }
      */
     
+    
+}
 
-}
-}

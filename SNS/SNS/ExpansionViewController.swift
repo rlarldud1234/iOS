@@ -9,7 +9,7 @@ import UIKit
 
 class ExpansionViewController: UIViewController {
 
-    var titleItem : String = ""
+    var titleItem = String()
     var detailItem : String = ""
     
     @IBOutlet weak var titleLabel : UILabel!
