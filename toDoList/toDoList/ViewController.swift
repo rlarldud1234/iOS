@@ -13,8 +13,8 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }//리스트의 값 만큼 행이 만들어짐
-
-  
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = list[indexPath.row].title
@@ -41,20 +41,20 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
         guard let data = userDefaults.object(forKey: "item") as? [[String: AnyObject]] else {
             return
         }
-            print(data.description)
-      
-            // list 배열에 저장하기
-            print(type(of: data))
-            list = data.map {
-                let title = $0["title"] as? String
-                let content = $0["content"] as? String
-    
-                return toDoList(title: title!, content: content!)
-            }
+        print(data.description)
+        
+        // list 배열에 저장하기
+        print(type(of: data))
+        list = data.map {
+            let title = $0["title"] as? String
+            let content = $0["content"] as? String
+            
+            return toDoList(title: title!, content: content!)
         }
+    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-            
+        
         if editingStyle == UITableViewCell.EditingStyle.delete{
             let alert = UIAlertController(title: "Hey", message: "really Delete", preferredStyle: UIAlertController.Style.alert)
             let defaultAction = UIAlertAction(title: "OK", style: .destructive){
@@ -84,7 +84,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidAppear(_ animated: Bool) {
         setData()
         tableView.reloadData()
-        
+    
     }
     
     @IBAction func tableView(_ sender : UIBarButtonItem){
@@ -92,11 +92,10 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             tableView.setEditing(false, animated: true)
         }
         else {
-            tableView.setEditing(true,
-                                 animated: true)
+            tableView.setEditing(true, animated: true)
         }
     }//에디팅 모드 활성화되어 있으면 비활성화로 비활성화로 되어있으면 활성화
-
-
-//    출처: https://hyesunzzang.tistory.com/68?category=626591 [dev.ssun]
+    
+    
+    //    출처: https://hyesunzzang.tistory.com/68?category=626591 [dev.ssun]
 }

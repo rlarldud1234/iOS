@@ -67,7 +67,6 @@ class ScreenViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
         loadData()
         
         // Do any additional setup after loading the view.
