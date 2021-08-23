@@ -17,7 +17,7 @@ enum AuthAPI: API{
         case .signup:
             return "/signup"
         case .login:
-            return "/auth"
+            return "/admin/login"
         }
     }
     

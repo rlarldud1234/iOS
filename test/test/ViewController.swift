@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     func login(email : String, ps: String)
     {
-        HTTPClient().post(url: AuthAPI.login.path(), params: ["email": email, "password": ps], header: Header.tokenIsEmpty.header()).responseJSON { res in
+        HTTPClient().post(url: AuthAPI.login.path(), params: ["id": email, "password": ps], header: Header.tokenIsEmpty.header()).responseJSON { res in
             switch res.response?.statusCode{
-            case 201:
+            case 200:
                 guard let data = res.data else {return}
                 guard let model = try? JSONDecoder().decode(SignInModal.self, from: data) else {return}
                 
