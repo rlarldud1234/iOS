@@ -24,7 +24,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         myWebView.navigationDelegate = self
-        loadWebPage("https://www.naver.com")
+        loadWebPage("https://github.com/eogus2513")
     }
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         myActivityIndicator.startAnimating()

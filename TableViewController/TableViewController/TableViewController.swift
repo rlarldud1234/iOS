@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
         
         // Configure the cell...
-        cell.textLabel?.text = items[(indexPath as NSIndexPath).row]
+        cell.textLabel?.text = "asdf"//items[(indexPath as NSIndexPath).row]
         cell.imageView?.image = UIImage(named: itemsImageFile[(indexPath as NSIndexPath).row])
 
         return cell

@@ -104,11 +104,11 @@
 				389F6C1C265A2C5D00854653 /* AppDelegate.swift */,
 				389F6C1E265A2C5D00854653 /* SceneDelegate.swift */,
 				389F6C20265A2C5D00854653 /* ViewController.swift */,
+				388C95B4265A300200219474 /* AddViewController.swift */,
 				389F6C22265A2C5D00854653 /* Main.storyboard */,
 				389F6C25265A2C5D00854653 /* Assets.xcassets */,
 				389F6C27265A2C5D00854653 /* LaunchScreen.storyboard */,
 				389F6C2A265A2C5D00854653 /* Info.plist */,
-				388C95B4265A300200219474 /* AddViewController.swift */,
 			);
 			path = toDoList;
 			sourceTree = "<group>";
