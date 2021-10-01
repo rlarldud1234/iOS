@@ -11,6 +11,7 @@
 		385A30192705D58D001DBB1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A30182705D58D001DBB1A /* ContentView.swift */; };
 		385A301B2705D58F001DBB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385A301A2705D58F001DBB1A /* Assets.xcassets */; };
 		385A301E2705D58F001DBB1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385A301D2705D58F001DBB1A /* Preview Assets.xcassets */; };
+		38D9AAB12706B05200DAE5CC /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D9AAB02706B05200DAE5CC /* MyWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		385A30182705D58D001DBB1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		385A301A2705D58F001DBB1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385A301D2705D58F001DBB1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38D9AAB02706B05200DAE5CC /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		38D9AAB22706B0A000DAE5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		385A30152705D58D001DBB1A /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				38D9AAB22706B0A000DAE5CC /* Info.plist */,
 				385A30162705D58D001DBB1A /* SwiftUIStudyApp.swift */,
 				385A30182705D58D001DBB1A /* ContentView.swift */,
 				385A301A2705D58F001DBB1A /* Assets.xcassets */,
+				38D9AAB02706B05200DAE5CC /* MyWebView.swift */,
 				385A301C2705D58F001DBB1A /* Preview Content */,
 			);
 			path = SwiftUIStudy;
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				385A30192705D58D001DBB1A /* ContentView.swift in Sources */,
+				38D9AAB12706B05200DAE5CC /* MyWebView.swift in Sources */,
 				385A30172705D58D001DBB1A /* SwiftUIStudyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +277,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,6 +307,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
