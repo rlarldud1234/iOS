@@ -1,0 +1,6 @@
+framework module Pods_RxFlowTest {
+  umbrella header "Pods-RxFlowTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
