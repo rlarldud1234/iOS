@@ -19,9 +19,12 @@ class ViewController: UIViewController{
         
     }
     @IBAction func addBtn(_ sender : Any){
-        let alert = UIAlertController(title: "원하는 타이틀", message: "원하는 메세지", preferredStyle: .actionSheet)
-        let libary = UIAlertAction(title: "갤러리", style: .default, handler: { ACTION in self.openLibary()})
-        let camera = UIAlertAction(title: "카메라", style: .default, handler: { ACTION in self.openCamera()})
+        let alert = UIAlertController(title: "", message: "원하는 메세지",
+                                      preferredStyle: .actionSheet)
+        let libary = UIAlertAction(title: "갤러리", style: .default, handler:
+                                    { ACTION in self.openLibary()})
+        let camera = UIAlertAction(title: "카메라", style: .default, handler:
+                                    { ACTION in self.openCamera()})
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         alert.addAction(libary)
         alert.addAction(camera)
@@ -47,6 +50,7 @@ class ViewController: UIViewController{
             print("Camera not available")
         }
     }
+        
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 imageView.image = image

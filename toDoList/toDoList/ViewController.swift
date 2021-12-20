@@ -22,6 +22,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
         
         return cell
     }//셀에다가 주제와 내용 넣어주고 반환해주기
+    
     func setData(){
         let Data = list.map {
             

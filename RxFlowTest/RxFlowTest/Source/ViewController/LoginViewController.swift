@@ -22,6 +22,7 @@ class LoginViewController: UIViewController, Stepper {
     }()
     
     let disposebag = DisposeBag()
+    
     var steps = PublishRelay<Step>()
     
     override func viewDidLoad() {
